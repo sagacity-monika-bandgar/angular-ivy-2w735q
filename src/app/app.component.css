@@ -1,0 +1,122 @@
+.page-wrapper {
+  /* background-color: gray; */
+}
+.section-background {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  text-align: left;
+}
+.pannel-heading {
+  font-size: 18px;
+  padding: 30px 15px;
+  color: #8be1f9;
+}
+.user-info-wrapper {
+  /* margin: 10px 5px; */
+  border-top: 2px solid #fbfcfd;
+  border-bottom: 2px solid #fbfcfd;
+  /* background-color: #f8f9fa; */
+}
+.user-info {
+  margin: 10px 20px;
+  padding: 15px 15px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+.user-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #eeeeff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+}
+.user-name-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.user-info-container {
+  width: 75%;
+}
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.user-designation {
+  font-size: 16px;
+  color: #c7cad0;
+}
+.user-info-wrapper li {
+  display: inline-block;
+}
+.icon-position {
+  float: right;
+  font-size: 35px;
+  color: #cdd1da;
+}
+.screen-heading-wrapper {
+  background-color: #fff;
+  border-bottom-left-radius: 60px;
+  padding: 20px 20px 20px 35px;
+  height: 175px;
+}
+.screen-heading {
+  color: #a6a8ac;
+  font-size: 20px;
+}
+.sub-heading {
+  font-size: 16px;
+  color: #919398;
+}
+.block-wrapper {
+  position: absolute;
+  right: 45%;
+  top: 30%;
+}
+.blocks {
+  display: inline-block;
+  color: #fff;
+  margin: 0 20px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+}
+.acount-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  background-color: #fff;
+}
+.c-account-block {
+  background-color: #00b4ec;
+}
+.c-account-color {
+  color: #00b4ec;
+}
+.info-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.account-count {
+  font-size: 16px;
+}
+.S-account-block {
+  background-color: #00b4ec;
+}
+.S-account-color {
+  color: #4c52fa;
+}
+.K-account-block {
+  color: #00d09d;
+}
+.K-account-color {
+  color: #00d09d;
+}

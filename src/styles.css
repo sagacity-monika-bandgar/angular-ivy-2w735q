@@ -1,0 +1,9 @@
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  background-color: #ebeff6;
+}
+ul {
+  list-style-type: none;
+}
