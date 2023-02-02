@@ -74,8 +74,8 @@
 }
 .block-wrapper {
   position: absolute;
-  right: 45%;
-  top: 30%;
+  left: 27%;
+  top: 32%;
 }
 .blocks {
   display: inline-block;
@@ -109,13 +109,13 @@
   font-size: 16px;
 }
 .S-account-block {
-  background-color: #00b4ec;
+  background-color: #4c52fa;
 }
 .S-account-color {
   color: #4c52fa;
 }
 .K-account-block {
-  color: #00d09d;
+  background-color: #00d09d;
 }
 .K-account-color {
   color: #00d09d;
