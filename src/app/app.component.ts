@@ -41,4 +41,5 @@ export class AppComponent {
       icon: 'settings',
     },
   ];
+  panelOpenState = false;
 }

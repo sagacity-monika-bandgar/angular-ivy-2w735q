@@ -1,4 +1,4 @@
-<div class="page-wrapper row">
+<div class="container-fluid page-wrapper row">
   <div class="col-md-3 mt-3 ml-3">
     <div class="slide-pannel section-background">
       <h2 class="pannel-heading">Bulk Upload Application</h2>
@@ -70,15 +70,17 @@
     <div class="dashboard-cointaner">
       <p class="section-heading">Accounts</p>
       <div class="accordian-wrapper">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            This is the expansion title
-          </mat-expansion-panel-header>
-
-          <ng-template matExpansionPanelContent>
-            Some deferred content
-          </ng-template>
-        </mat-expansion-panel>
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <span class="acount-icon"></span>
+                <span>Hudson Group</span>
+              </mat-panel-title>
+              <mat-panel-description> </mat-panel-description>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+        </mat-accordion>
       </div>
     </div>
   </div>
