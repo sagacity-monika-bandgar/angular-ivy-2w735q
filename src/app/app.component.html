@@ -1,4 +1,4 @@
-<div class="container-fluid page-wrapper row">
+<div class="page-wrapper row">
   <div class="col-md-3 mt-3 ml-3">
     <div class="slide-pannel section-background">
       <h2 class="pannel-heading">Bulk Upload Application</h2>
@@ -15,11 +15,11 @@
         </ul>
       </div>
       <div class="menu-wrapper">
-        <ul>
-          <li>
-            <span class="material-icons"> more_vert </span>
-            <span class="">Dashboard</span>
-            <span class="material-icons"> more_vert </span>
+        <ul class="menu-list">
+          <li *ngFor="let item of menuList" class="menu">
+            <span class="material-icons">{{ item.icon }}</span>
+            <span class="menu-name">{{ item.menu }}</span>
+            <span class="material-icons float-menu"> navigate_next </span>
           </li>
         </ul>
       </div>
@@ -68,4 +68,7 @@
       </div>
     </div>
   </div>
+  <div class="dashboard-cointaner col-md-9">
+    
+  <div>
 </div>
