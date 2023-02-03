@@ -1,6 +1,5 @@
 .page-wrapper {
   /* background-color: gray; */
-  margin-left: 20px;
 }
 .section-background {
   background-color: #fff;
@@ -69,14 +68,26 @@
   color: #a6a8ac;
   font-size: 20px;
 }
+.doc-section-wrap {
+  position: relative;
+  height: 220px;
+}
+.dashboard-section {
+  /* position: absolute; */
+  width: 100%;
+  /* right: -13px; */
+}
 .sub-heading {
   font-size: 16px;
   color: #919398;
 }
+.header-section {
+  position: relative;
+}
 .block-wrapper {
   position: absolute;
-  left: 30%;
-  top: 19%;
+  left: 2%;
+  top: 75%;
 }
 .blocks {
   display: inline-block;
@@ -127,7 +138,7 @@
   margin-top: 10px;
 }
 .menu {
-  padding: 20px;
+  padding: 10px;
   color: #c2c6d1;
 }
 .menu:hover {
@@ -150,4 +161,66 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 14px;
+}
+.account-info-cointainer {
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.bread-crum {
+  margin-left: 5px;
+}
+.breadcrum-wrap {
+  display: inline-block;
+}
+.form-field-wrap {
+  float: right;
+}
+.account-thumb {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #00b4ec;
+  color: #fff;
+  display: inline-block;
+  padding: 2px 8px;
+}
+.account-type-name {
+  font-size: 14px;
+}
+.bread-crum {
+  font-size: 12px;
+}
+.acc-name {
+  display: inline-block;
+  margin-left: 20px;
+  overflow: hidden;
+  vertical-align: top;
+}
+.info-table {
+  color: #c5c8ce;
+  margin-top: 10px;
+  font-size: 12px;
+  border-bottom: 1px solid #c5c8ce;
+}
+.col-blue {
+  background-color: #4c52fa;
+  text-align: center;
+  color: #fff;
+}
+.col-green {
+  background-color: #00d09d;
+  text-align: center;
+  color: #fff;
+  padding: 0px 10px;
+}
+.col-gray {
+  background-color: #929292;
+  text-align: center;
+  color: #fff;
+  padding: 0px 10px;
+}
+.info-table-wrap{
+  
 }

@@ -1,86 +1,149 @@
-<div class="container-fluid page-wrapper row">
-  <div class="col-md-3 mt-3 ml-3">
-    <div class="slide-pannel section-background">
-      <h2 class="pannel-heading">Bulk Upload Application</h2>
-      <div class="user-info-wrapper">
-        <ul class="user-info mt-3 mb-3">
-          <li><div class="user-icon">LS</div></li>
-          <li class="user-info-container">
+<div class="container-fluid page-wrapper">
+  <div class="row">
+    <div class="col-md-3 mt-3 ml-3">
+      <div class="slide-pannel section-background">
+        <h2 class="pannel-heading">Bulk Upload Application</h2>
+        <div class="user-info-wrapper">
+          <ul class="user-info mt-3 mb-3">
+            <li><div class="user-icon">LS</div></li>
+            <li class="user-info-container">
+              <div class="user-name-wrapper">
+                <h4 class="user-name">Lotta Schneider</h4>
+                <span class="user-designation">Administrator</span>
+              </div>
+              <span class="material-icons icon-position"> more_vert </span>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-wrapper">
+          <ul class="menu-list">
+            <li *ngFor="let item of menuList" class="menu">
+              <span class="material-icons">{{ item.icon }}</span>
+              <span class="menu-name">{{ item.menu }}</span>
+              <span class="material-icons float-menu"> navigate_next </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="user-info-wrapper">
+          <div class="user-info">
+            <div class="user-icon">LS</div>
             <div class="user-name-wrapper">
               <h4 class="user-name">Lotta Schneider</h4>
               <span class="user-designation">Administrator</span>
             </div>
-            <span class="material-icons icon-position"> more_vert </span>
-          </li>
-        </ul>
+          </div>
+        </div> -->
       </div>
-      <div class="menu-wrapper">
-        <ul class="menu-list">
-          <li *ngFor="let item of menuList" class="menu">
-            <span class="material-icons">{{ item.icon }}</span>
-            <span class="menu-name">{{ item.menu }}</span>
-            <span class="material-icons float-menu"> navigate_next </span>
-          </li>
-        </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="doc-section-wrap">
+            <div class="dashboard-section">
+              <div class="header-section">
+                <div class="screen-heading-wrapper">
+                  <h1 class="screen-heading">Hierarchy</h1>
+                  <p class="sub-heading">organization Account Hierarchy</p>
+                </div>
+                <div class="block-wrapper">
+                  <div class="blocks c-account-block">
+                    <span class="acount-icon c-account-color">C</span>
+                    <div class="info-wrapper">
+                      <h4 class="account-count">17</h4>
+                      <span class="account-name">C Accounts</span>
+                    </div>
+                  </div>
+                  <div class="blocks S-account-block">
+                    <span class="acount-icon S-account-color">S</span>
+                    <div class="info-wrapper">
+                      <h4 class="account-count">45</h4>
+                      <span class="account-name">S Accounts</span>
+                    </div>
+                  </div>
+                  <div class="blocks k-account-block">
+                    <span class="acount-icon K-account-color">K</span>
+                    <div class="info-wrapper">
+                      <h4 class="account-count">147</h4>
+                      <span class="account-name">K Accounts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="account-info-cointainer">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="account-info-wrap clearfix">
+              <div class="breadcrum-wrap">
+                <h4 class="account-type-name mb-0">C Accounts</h4>
+                <span class="bread-crum">Accounts</span>
+                <span class="bread-crum">></span>
+                <span class="bread-crum">Admin</span>
+              </div>
+              <div class="form-field-wrap">
+                <mat-form-field>
+                  <input type="text" matInput placeholder="Search" />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="info-table-wrap">
+          <section *ngFor="let item of accountData" class="row info-table">
+            <div class="col-md-3">
+              <span class="account-thumb">C</span>
+              <p class="acc-name">{{ item.name }}</p>
+            </div>
+            <div class="col-md-1">
+              <p>{{ item.count }}</p>
+            </div>
+            <div class="col-md-2">
+              <p class="col-blue">{{ item.sacc }}</p>
+            </div>
+            <div class="col-md-2">
+              <span class="col-green">{{ item.kacc }}</span>
+            </div>
+            <div class="col-md-3">
+              <span class="col-gray">{{ item.subscribers }}</span>
+            </div>
+            <div class="col-1">
+              <span class="material-icons"> navigate_next </span>
+            </div>
+          </section>
+        </section>
+        <mat-paginator
+          [length]="100"
+          [pageSize]="10"
+          [pageSizeOptions]="[5, 10, 25, 100]"
+          aria-label="Select page"
+        >
+        </mat-paginator>
 
-      <!-- <div class="user-info-wrapper">
-        <div class="user-info">
-          <div class="user-icon">LS</div>
-          <div class="user-name-wrapper">
-            <h4 class="user-name">Lotta Schneider</h4>
-            <span class="user-designation">Administrator</span>
+        <!-- <section class="row info-table">
+          <div class="col-md-3">
+            <span class="account-thumb">C</span>
+            <p class="acc-name">Hudson Group</p>
           </div>
-        </div>
-      </div> -->
-    </div>
-  </div>
-  <div class="col-md-9">
-    <div class="dashboard-section">
-      <div class="header-section">
-        <div class="screen-heading-wrapper">
-          <h1 class="screen-heading">Hierarchy</h1>
-          <p class="sub-heading">organization Account Hierarchy</p>
-        </div>
-        <div class="block-wrapper">
-          <div class="blocks c-account-block">
-            <span class="acount-icon c-account-color">C</span>
-            <div class="info-wrapper">
-              <h4 class="account-count">17</h4>
-              <span class="account-name">C Accounts</span>
-            </div>
+          <div class="col-md-1">
+            <p>C125</p>
           </div>
-          <div class="blocks S-account-block">
-            <span class="acount-icon S-account-color">S</span>
-            <div class="info-wrapper">
-              <h4 class="account-count">45</h4>
-              <span class="account-name">S Accounts</span>
-            </div>
+          <div class="col-md-2">
+            <p class="col-blue">10 S Accounts</p>
           </div>
-          <div class="blocks k-account-block">
-            <span class="acount-icon K-account-color">K</span>
-            <div class="info-wrapper">
-              <h4 class="account-count">147</h4>
-              <span class="account-name">K Accounts</span>
-            </div>
+          <div class="col-md-2">
+            <span class="col-green">530 K Accounts</span>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="dashboard-cointaner">
-      <p class="section-heading">Accounts</p>
-      <div class="accordian-wrapper">
-        <mat-accordion class="example-headers-align">
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                <span class="acount-icon"></span>
-                <span>Hudson Group</span>
-              </mat-panel-title>
-              <mat-panel-description> </mat-panel-description>
-            </mat-expansion-panel-header>
-          </mat-expansion-panel>
-        </mat-accordion>
+          <div class="col-md-3">
+            <span class="col-gray">5125 Subscribers</span>
+          </div>
+          <div class="col-1">
+            <span class="material-icons"> navigate_next </span>
+          </div>
+        </section> -->
       </div>
     </div>
   </div>
